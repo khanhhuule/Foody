@@ -1,5 +1,6 @@
 package lehuukhanh.com.foody.activity;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,16 +10,25 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+>>>>>>> origin/master
 
 import lehuukhanh.com.foody.R;
 
 public class MainActivity extends AppCompatActivity {
+<<<<<<< HEAD
     private BottomNavigationView bottomNavigationView;
+=======
+>>>>>>> origin/master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         bottomNavigationView = findViewById(R.id.bottomNavigation);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -37,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+=======
+>>>>>>> origin/master
     }
 }

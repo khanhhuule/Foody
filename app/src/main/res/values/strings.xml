@@ -1,10 +1,3 @@
 <resources>
     <string name="app_name">Foody</string>
-
-    <string name="delicious">Delicious</string>
-    <string name="for_you">food for you</string>
-    <string name="home">Home</string>
-    <string name="favorite">Favorite</string>
-    <string name="profile">Profile</string>
-    <string name="history">History</string>
 </resources>
