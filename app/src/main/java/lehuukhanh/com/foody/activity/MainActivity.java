@@ -1,8 +1,10 @@
-package lehuukhanh.com.foody;
+package lehuukhanh.com.foody.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import lehuukhanh.com.foody.R;
 
 public class MainActivity extends AppCompatActivity {
 
