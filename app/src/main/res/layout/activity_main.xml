@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f2f2f2"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivity"
+    android:id="@+id/drawerLayout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,5 +94,16 @@
         </RelativeLayout>
 
     </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:backgroundTint="#E1FF5722"
+        android:paddingTop="20dp"
+        app:itemTextColor="@color/white"
+        app:drawerLayoutCornerSize="20dp"
+        app:menu="@menu/menu_toolbar"
+        android:layout_gravity="start"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

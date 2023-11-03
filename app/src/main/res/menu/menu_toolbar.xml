@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mProfile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+    <item android:id="@+id/mOrders"
+        android:title="Orders"
+        android:icon="@drawable/orders" />
+    <item android:id="@+id/mOffer"
+        android:title="Offer and Promo"
+        android:icon="@drawable/offer" />
+    <item android:id="@+id/mPrivacy"
+        android:title="Privacy policy"
+        android:icon="@drawable/sticky_notes" />
+
+    <item android:id="@+id/mSecurity"
+        android:title="Security"
+        android:icon="@drawable/security" />
+    <item android:id="@+id/mSignout"
+        android:title="Sign-out"
+        android:icon="@drawable/signout"/>
+</menu>
