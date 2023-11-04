@@ -102,7 +102,6 @@
         android:backgroundTint="#E1FF5722"
         android:paddingTop="20dp"
         app:itemTextColor="@color/white"
-        app:drawerLayoutCornerSize="20dp"
         app:menu="@menu/menu_toolbar"
         android:layout_gravity="start"/>
 

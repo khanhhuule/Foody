@@ -6,8 +6,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolBar);
         NavigationView navigationView = findViewById(R.id.navigationView);
         drawerLayout = findViewById(R.id.drawerLayout);
+        ImageButton btnCart = findViewById(R.id.btnCart);
 
         setSupportActionBar(toolbar);
         //Cho phép hiển thị nút back trên thanh công cụ
@@ -68,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.mProfile) {
                     toolbar.setTitle("Profile");
                     Toast.makeText(MainActivity.this, "Profile", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                 } else if (item.getItemId() == R.id.mOrders) {
                     toolbar.setTitle("Orders");
                     Toast.makeText(MainActivity.this, "Orders", Toast.LENGTH_SHORT).show();
@@ -85,6 +90,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShopingCartActivity.class);
+                startActivity(intent);
+            }
+        });
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
