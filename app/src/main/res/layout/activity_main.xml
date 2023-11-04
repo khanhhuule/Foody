@@ -6,92 +6,46 @@
     android:layout_height="match_parent"
     android:background="#f2f2f2"
     tools:context=".activity.MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp">
+            android:fitsSystemWindows="true"
+            android:layout_weight="5"
+            android:layout_marginLeft="10sp"
+            app:navigationIcon="@drawable/ic_navigation"
+            app:title=""/>
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolBar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fitsSystemWindows="true"
-                android:layout_weight="5"
-                android:layout_marginLeft="10sp"
-                app:navigationIcon="@drawable/ic_navigation"
-                app:title=""/>
-
-            <ImageButton
-                android:id="@+id/btnCart"
-                android:layout_width="0dp"
-                android:layout_height="64dp"
-                android:src="@drawable/ic_shopping_cart"
-                android:background="@android:color/transparent"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/delicious"
-            android:textSize="34sp"
-            android:layout_marginLeft="25dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/for_you"
-            android:textSize="34sp"
-            android:layout_marginLeft="25dp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/edtSearch"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/bg_edt"
-            android:drawableLeft="@drawable/kinh_lup"
-            android:paddingLeft="35dp" />
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="30dp"
-            android:background="@android:color/transparent"/>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager2"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomNavigation"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                app:menu="@menu/menu_bottom"
-                app:backgroundTint="#f2f2f2"
-                app:itemBackground="@android:color/transparent"
-                app:itemIconTint="#ADADAF"
-                android:layout_alignParentBottom="true"/>
-        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btnCart"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_shopping_cart"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/menu_bottom"
+            app:backgroundTint="#f2f2f2"
+            app:itemBackground="@android:color/transparent"
+            app:itemIconTint="@color/custom_color_bottom"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

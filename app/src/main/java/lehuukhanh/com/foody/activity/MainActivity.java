@@ -4,6 +4,7 @@ package lehuukhanh.com.foody.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id == R.id.action_home){
                     Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+
                 } else if (id == R.id.action_favorite) {
                     Toast.makeText(MainActivity.this, "Favorite", Toast.LENGTH_SHORT).show();
                 }else if(id == R.id.action_profile){
