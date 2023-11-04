@@ -3,6 +3,7 @@
     <item android:id="@+id/mProfile"
         android:title="Profile"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:icon="@drawable/profile" />
     <item android:id="@+id/mOrders"
         android:title="Orders"
@@ -21,6 +22,8 @@
         android:title="Sign-out"
         android:icon="@drawable/signout"/>
 =======
+=======
+>>>>>>> origin/master
         android:icon="@drawable/profile"/>
     <item android:id="@+id/mOrders"
         android:title="Orders"
@@ -37,5 +40,8 @@
     <item android:id="@+id/mSignout"
         android:title="Sign_out"
         android:icon="@drawable/security"/>
+<<<<<<< HEAD
 >>>>>>> bf56c90 (Navigation)
+=======
+>>>>>>> origin/master
 </menu>
